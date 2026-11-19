@@ -47,10 +47,10 @@ Full data and analysis: [`results/results.md`](results/results.md)
 Requirements: `gcc`, `python3`, and NumPy (`pip install numpy`).
 
 ```bash
-git clone <this repo>
+git clone https://github.com/Nachoman333/c-vs-python-benchmarking.git
 cd c-vs-python-benchmarking
-./run_benchmarks.sh            # N = 50,000,000, 5 runs each
-./run_benchmarks.sh 10000000 7 # custom N and number of runs
+bash run_benchmarks.sh            # N = 50,000,000, 5 runs each
+bash run_benchmarks.sh 10000000 7 # custom N and number of runs
 ```
 
 The script compiles the C code at `-O0` and `-O2`, runs every version, prints the median times, and writes the `-O2` assembly to `build/sum_O2.s`.
